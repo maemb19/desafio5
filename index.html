@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CotillonMalevolin</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <main class="grid-container">
-        <div class="header">
+        <div class="header" data-aos="fade-up"
+				data-aos-anchor-placement="bottom-bottom">
 					<img src="./assets/img/LOGOpx.jpeg" class="logo" alt="logo">
 				</div>  
         <div class="sidebar">
@@ -123,6 +125,10 @@
 						</div>
 					</form>
         </footer>   
-    </main> 
+    </main>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script> 
 </body>
 </html>
