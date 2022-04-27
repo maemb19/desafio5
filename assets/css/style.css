@@ -23,6 +23,7 @@ body{
 .sidebar{
   grid-area: sidebar;
   background-color: rgb( 234, 224, 250);
+  z-index: 1;
 }
 
 .container{
@@ -37,6 +38,10 @@ body{
   display: flex;
   justify-content: center;
   color: white;
+}
+
+.icons{
+  width: 70px;
 }
 
 .logo{
@@ -61,9 +66,14 @@ body{
   background-color: #13a4a4;
 }
 
+.menu-container{
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-container .menu{
   display: inline-block;
-  width: 100px;
   position: relative;
   font-size: 14px;
   background-color: #13a4a4;
@@ -124,6 +134,15 @@ body{
   margin-top: 5px;
   position: absolute;
   bottom: 15px;
+}
+
+.button-pro{
+  background-color: #57cdcd;
+  border: none;
+}
+
+.button-pro:hover{
+  background-color: #f2c1f3;
 }
 
 .product img{
