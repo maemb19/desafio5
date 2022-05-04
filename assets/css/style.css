@@ -36,7 +36,7 @@ body {
   z-index: 1;
 }
 
-.container {
+.main-container {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: container;
@@ -181,9 +181,14 @@ body {
   font-size: 30px;
 }
 
+.menu-burger {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .box {
     background-color: #eae0fa;
+    margin: 30px 0;
   }
   .grid-container {
     -ms-grid-columns: 1fr;
@@ -194,6 +199,18 @@ body {
   }
   .sidebar {
     display: none;
+  }
+  .menu-burger {
+    display: block;
+  }
+  .header {
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

@@ -27,7 +27,7 @@ body{
   z-index: 1;
 }
 
-.container{
+.main-container{
   grid-area: container;
 }
 
@@ -140,9 +140,14 @@ body{
   font-size: 30px;
 }
 
+.menu-burger{
+  display: none;
+}
+
 @media (max-width:768px){
   .box{
     background-color: rgb( 234, 224, 250);
+    margin: 30px 0;
   }
   .grid-container{
     grid-template-columns: 1fr;
@@ -155,6 +160,16 @@ body{
 
   .sidebar{
     display: none;
+  }
+  
+  .menu-burger{
+    display: block;
+  }
+
+  .header{
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
   }
   
 }
