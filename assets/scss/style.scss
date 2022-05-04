@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: 0;
 }
+
 .grid-container{
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -56,62 +57,56 @@ body{
   margin: 30px;
   border-radius: 5px;
   border: solid 1px rgb(250, 216, 243);
-}
-
-.box img{
-  width: 100%;
-  height: auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .inicial__boton{
   background-color: #13a4a4;
   border: none;
-}
-
-.inicial__boton:hover{
-  background-color:rgb(252, 251, 156);
+  &:hover{
+    background-color:rgb(252, 251, 156)
+  }
 }
 
 .menu-container{
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-}
-
-.menu-container .menu{
-  display: inline-block;
-  position: relative;
-  font-size: 14px;
-  background-color: #13a4a4;
-  padding: 5px;
-  border-radius: 3px;
-  margin: 5px;
-}
-
-.menu-container .sub-menu{
-  list-style: none;
-  display: none;
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  background-color: rgb(252, 251, 156) ;
-}
-
-.menu-container .menu:hover .sub-menu{
-  display: block;
-
-}
-
-.sub-menu-item{
-  font-size: 18px;
-}
-
-.menu-container a{
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  font-size: 20px;
+  .menu{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+    &:hover{
+      .sub-menu{
+        display: block;
+      }      
+    }
+  }  
+  .sub-menu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: rgb(252, 251, 156) ;
+    .sub-menu-item{
+      font-size: 18px;
+    }
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+  }
 }
 
 .product-list{
@@ -120,42 +115,12 @@ body{
   justify-content: center;
 }
 
-.product{
-  width: 210px;
-  height: 300px;
-  background-color: rgb(234, 224, 250);
-  border-radius: 5px;
-  padding: 20px;
-  margin: 10px;
-  position: relative;
-}
-
-.product-title{
-  display: flex;
-  justify-content: left;
-}
-
-.product-button{
-  background-color: #57cfcf;
-  border-radius: 5px;
-  color:black;
-  margin-top: 5px;
-  position: absolute;
-  bottom: 15px;
-}
-
 .button-pro{
   background-color: #57cdcd;
   border: none;
-}
-
-.button-pro:hover{
-  background-color:rgb(252, 251, 156) ;
-}
-
-.product img{
-  width: 100%;
-  height: auto;
+  &:hover{
+    background-color:rgb(252, 251, 156) ;
+  }
 }
 
 .header-category{
