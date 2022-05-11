@@ -8,4 +8,9 @@ $box: (
   margin: 30px,
   border-radius: 5px,
   border: solid 1px rgb(250, 216, 243)
-  )
+  );
+  
+  @mixin propiedadesPrincipales ($bg-color, $border) {
+    background-color: $bg-color;
+    $border: $border;
+  };

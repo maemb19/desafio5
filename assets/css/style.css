@@ -141,7 +141,7 @@ body {
 
 .button-pro, .inicial__boton {
   background-color: #57cdcd;
-  border: none;
+  outline: none;
 }
 
 .button-pro:hover, .inicial__boton:hover {
@@ -151,6 +151,7 @@ body {
 .inicial__boton {
   padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
+  border: none;
 }
 
 .header-category {
