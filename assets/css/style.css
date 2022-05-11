@@ -82,17 +82,6 @@ body {
   height: auto;
 }
 
-.inicial__boton {
-  background-color: #13a4a4;
-  border: none;
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;
-}
-
-.inicial__boton:hover {
-  background-color: #fcfb9c;
-}
-
 .menu-container {
   padding: 0 15px;
   display: -webkit-box;
@@ -150,13 +139,18 @@ body {
           justify-content: center;
 }
 
-.button-pro {
+.button-pro, .inicial__boton {
   background-color: #57cdcd;
   border: none;
 }
 
-.button-pro:hover {
+.button-pro:hover, .inicial__boton:hover {
   background-color: #fcfb9c;
+}
+
+.inicial__boton {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
 }
 
 .header-category {

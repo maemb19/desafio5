@@ -1,3 +1,5 @@
+@import "./variable.scss";
+
 body{
   padding: 0;
   margin: 0;
@@ -50,23 +52,16 @@ body{
 }
 
 .box{
-  width: 400px;
-  height: 345px;
-  background-color: rgb( 234, 224, 250);
-  padding: 20px;
-  margin: 30px;
-  border-radius: 5px;
-  border: solid 1px rgb(250, 216, 243);
+  width: map-get($box , width);
+  height: map-get($box , height);
+  background-color: map-get($box , background-color);
+  padding: map-get($box , padding);
+  margin: map-get($box , margin);
+  border-radius: map-get($box , border-radius);
+  border: map-get($box , border);
   img{
     width: 100%;
     height: auto;
-  }
-}
-
-.inicial__boton{
-  @extend .button-pro
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;
   }
 }
 
@@ -117,12 +112,18 @@ body{
 }
 
 .button-pro{
-  background-color: #57cdcd;
+  background-color: $color-boton;
   border: none;
   &:hover{
     background-color:rgb(252, 251, 156) ;
   }
 }
+
+.inicial__boton{
+  @extend .button-pro;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  }
 
 .header-category{
   font-weight: 600;
